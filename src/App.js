@@ -5,6 +5,7 @@ import Home from "./components/pages/Home"
 import Resume from "./components/pages/Resume"
 import Projects from "./components/pages/Projects"
 import Contact from "./components/pages/Contact"
+import NotFound from "./components/pages/NotFound"
 import { CssBaseline } from "@material-ui/core"
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
             <Route exact path="/resume" component={Resume} />
             <Route exact path="/projects" component={Projects} />
             <Route exact path="/contact" component={Contact} />
+            <Route component={NotFound} />
           </Switch>
         </div>
       </Router>
