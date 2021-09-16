@@ -2,7 +2,7 @@ import { makeStyles } from "@material-ui/core/styles"
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 import SideDrawer from "./components/layout/SideDrawer"
 import {
-  Home,
+  About,
   Resume,
   Projects,
   Contact,
@@ -25,7 +25,7 @@ function App() {
       <Router>
         <SideDrawer />
         <Switch>
-          <Route exact path="/" component={Home} />
+          <Route exact path="/" component={About} />
           <Route exact path="/resume" component={Resume} />
           <Route exact path="/projects" component={Projects} />
           <Route exact path="/contact" component={Contact} />

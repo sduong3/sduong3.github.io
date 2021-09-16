@@ -15,7 +15,7 @@ const Projects = () => {
   return (
     <Box className={classes.content}>
       <Typography variant="h3" gutterBottom>
-        Home
+        Projects
       </Typography>
       <Typography paragraph>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod

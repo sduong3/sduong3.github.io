@@ -1,11 +1,14 @@
 import React from "react"
 import { makeStyles } from "@material-ui/core/styles"
 import { Box, Typography } from "@material-ui/core"
+import BubbleParticles from "../layout/BubbleParticles"
 
 const useStyles = makeStyles((theme) => ({
   content: {
     flexGrow: 1,
-    padding: theme.spacing(3)
+    padding: theme.spacing(3),
+    backgroundColor: "black",
+    color: "white"
   }
 }))
 
@@ -15,7 +18,7 @@ const Resume = () => {
   return (
     <Box className={classes.content}>
       <Typography variant="h3" gutterBottom>
-        Projects
+        Resume
       </Typography>
       <Typography paragraph>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -31,6 +34,7 @@ const Resume = () => {
         varius duis at consectetur lorem. Velit sed ullamcorper morbi tincidunt.
         Lorem donec massa sapien faucibus et molestie ac.
       </Typography>
+      <BubbleParticles />
     </Box>
   )
 }
